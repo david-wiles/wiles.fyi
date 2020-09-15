@@ -1,0 +1,22 @@
+{
+  "name": "dw-blog",
+  "version": "0.0.1",
+  "description": "David Wiles' blog",
+  "main": "index.js",
+  "author": "David Wiles <davidwiles33@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build:html": "cmd-cv -r html -o www",
+    "watch:html": "cmd-cv -r html -o www -w",
+    "build:scss": "node-sass scss/* --output www/static/css",
+    "watch:scss": "node-sass scss/* --output www/static/css --watch",
+    "serve": "http-server www"
+  },
+  "dependencies": {
+    "node-sass": "^4.14.1",
+    "site-generator": "https://github.com/david-wiles/site-generator.git"
+  },
+  "devDependencies": {
+    "http-server": "^0.12.3"
+  }
+}

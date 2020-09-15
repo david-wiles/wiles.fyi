@@ -1,0 +1,33 @@
+<script>
+  let theme = 'light';
+  let selectors = "h1, h2, h3, h4, h5, h6, p, li, a, span";
+
+  document.addEventListener('DOMContentLoaded', () => {
+    if (localStorage.getItem("theme") === 'dark') {
+      toggleTheme();
+    }
+  });
+
+  function toggleTheme() {
+    if (theme === 'light') {
+      theme = 'dark';
+      document.body.style.backgroundColor = 'rgb(50, 50, 50)'
+      document.querySelectorAll(selectors).forEach((el) => el.classList.add("dark"));
+      localStorage.setItem("theme", theme);
+    } else {
+      theme = 'light';
+      document.body.style.backgroundColor = 'white';
+      document.querySelectorAll(selectors).forEach((el) => el.classList.remove("dark"));
+      localStorage.setItem("theme", theme);
+    }
+  }
+
+  function toggleMenu() {
+    document.querySelector("header .header-list").classList.toggle("open");
+    document.querySelector("header").classList.toggle("open");
+    document.querySelector(".hamburger").classList.toggle("open");
+  }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-go.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.20.0/components/prism-javascript.min.js"></script>

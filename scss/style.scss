@@ -1,0 +1,268 @@
+/* Overall styling */
+body, html {
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-family: "Open Sans", sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 700;
+}
+
+p, a, small, b, i, em, figcaption {
+    font-weight: 400;
+}
+
+blockquote {
+    font-weight: 300;
+    font-size: 13pt;
+    background-color: whitesmoke;
+    padding: 1em;
+}
+
+a {
+    color: cornflowerblue;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+header {
+    padding-bottom: 10px;
+}
+
+hr {
+    border: 0.5px solid #f0f0f0;
+}
+
+.dark {
+    color: whitesmoke !important;
+}
+
+/* class styling */
+.page {
+    @media (min-width: 1215px) {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.5s;
+
+    .header-logo {
+        padding: 25px 0 0 25px;
+        margin: -22px 0 0 0;
+
+        a {
+            color: rgb(51, 51, 51);
+            font-weight: 700;
+            font-size: 46pt;
+            font-style: normal;
+            text-decoration: none;
+
+            &:hover {
+                color: black;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .header-list {
+        display: flex;
+        transition: visibility 0s,  opacity 0.5s linear;
+
+        .header-item {
+            list-style: none;
+            margin-bottom: 0.3em;
+            font-size: 15pt;
+            padding-right: 60px;
+        }
+
+        a {
+            color: black;
+
+            &:hover {
+                color: black;
+                text-decoration: underline;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .hamburger {
+        display: none;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+        &.open {
+            margin-bottom: 50px;
+        }
+
+        .hamburger {
+            display: flex;
+
+            &.open {
+                transition-duration: 0.5s;
+                .gg-menu {
+                    transform: scale(var(--ggs, 1.5)) rotate(45deg);
+                }
+                .gg-menu::before {
+                    transform: rotate(-90deg);
+                    top: 0;
+                }
+            }
+        }
+
+        .header-list {
+            visibility: hidden;
+
+            &.open {
+                visibility: visible;
+                position: fixed;
+                top: 75px;
+            }
+        }
+    }
+
+    @media (min-width: 1215px) {
+        position: fixed;
+        display: block;
+
+        .header-list {
+            display: block;
+        }
+    }
+}
+
+footer {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+
+    .footer-list {
+        display: flex;
+
+        .footer-item {
+            display: flex;
+            margin-right: 50px;
+
+            a {
+                color: black;
+            }
+        }
+    }
+}
+
+.main-content {
+    min-height: 100vh;
+    padding: 0 15px;
+    transition: all 0.5s;
+
+    @media (min-width: 1215px) {
+        margin-left: 258px;
+        max-width: 928px;
+    }
+
+    .post-link {
+        color: black;
+
+        &:hover {
+            color: black;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+
+    .preview-text {
+        color: #454545;
+    }
+
+    .post-list {
+        padding-left: 0;
+    }
+
+    .list-item {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .title {
+        color: rgb(51, 51, 51);
+        font-weight: 700;
+        font-size: 32pt;
+        font-style: normal;
+    }
+
+    .text-muted {
+        color: darkgray;
+    }
+}
+
+/* css.gg icons */
+
+/* moon */
+.gg-moon,
+.gg-moon::after {
+    display: block;
+    box-sizing: border-box;
+    border-radius: 50%
+}
+
+.gg-moon {
+    overflow: hidden;
+    position: relative;
+    transform: rotate(-135deg) scale(var(--ggs, 1));
+    width: 20px;
+    height: 20px;
+    border: 2px solid;
+    border-bottom-color: transparent;
+    cursor: pointer;
+}
+
+.gg-moon::after {
+    content: "";
+    position: absolute;
+    width: 12px;
+    height: 18px;
+    border: 2px solid transparent;
+    box-shadow: 0 0 0 2px;
+    top: 8px;
+    left: 2px
+}
+
+/* menu */
+.gg-menu {
+    transform: scale(var(--ggs,1.5));
+    transition: all 0.5s;
+    margin: 50% auto auto auto;
+}
+
+.gg-menu,
+.gg-menu::before {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 3px;
+    background: currentColor
+}
+
+.gg-menu::before {
+    content: "";
+    position: absolute;
+    top: -6px
+}
