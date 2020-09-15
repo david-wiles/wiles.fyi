@@ -3,19 +3,22 @@ body, html {
     margin: 0;
     padding: 0;
     display: block;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Crimson Text', serif;
+    font-weight: 400;
+    font-size: 20px;
 }
 
 h1, h2, h3, h4, h5 {
-    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
 }
 
-p, a, small, b, i, em, figcaption {
-    font-weight: 400;
+b {
+    font-weight: 600;
 }
 
 blockquote {
-    font-weight: 300;
+    font-weight: 400;
     font-size: 13pt;
     background-color: whitesmoke;
     padding: 1em;
@@ -30,39 +33,36 @@ a:hover {
     cursor: pointer;
 }
 
-header {
-    padding-bottom: 10px;
-}
-
 hr {
     border: 0.5px solid #f0f0f0;
 }
 
+/* class styling */
 .dark {
     color: whitesmoke !important;
-}
-
-/* class styling */
-.page {
-    @media (min-width: 1215px) {
-        display: flex;
-        flex-direction: row;
-    }
 }
 
 header {
     display: flex;
     justify-content: space-between;
-    transition: all 0.5s;
+    padding-bottom: 10px;
 
     .header-logo {
         padding: 25px 0 0 25px;
-        margin: -22px 0 0 0;
+        margin: -17px 0 0 0;
+        opacity: 1;
+        transition: opacity 0.5s linear;
+        font-family: 'Lato', sans-serif;
+        font-weight: 900;
+
+        &.hidden {
+            opacity: 0;
+        }
 
         a {
-            color: rgb(51, 51, 51);
+            color: black;
             font-weight: 700;
-            font-size: 46pt;
+            font-size: 40px;
             font-style: normal;
             text-decoration: none;
 
@@ -75,12 +75,14 @@ header {
 
     .header-list {
         display: flex;
-        transition: visibility 0s,  opacity 0.5s linear;
+        opacity: 1;
+        transition: opacity 0.5s linear;
+        font-family: "Lato", sans-serif;
 
         .header-item {
             list-style: none;
             margin-bottom: 0.3em;
-            font-size: 15pt;
+            font-size: 20px;
             padding-right: 60px;
         }
 
@@ -106,15 +108,11 @@ header {
     }
 
     @media (max-width: 768px) {
-        &.open {
-            margin-bottom: 50px;
-        }
-
         .hamburger {
             display: flex;
+            transition: all 0.5s linear;
 
             &.open {
-                transition-duration: 0.5s;
                 .gg-menu {
                     transform: scale(var(--ggs, 1.5)) rotate(45deg);
                 }
@@ -127,21 +125,33 @@ header {
 
         .header-list {
             visibility: hidden;
+            display: none;
+            opacity: 0;
+            position: absolute;
+            top: 75px;
+            width: 100%;
+            text-align: right;
+            z-index: 1;
+
+            .header-item {
+                font-size: 30px;
+                margin-bottom: 1em;
+            }
+
+            .dark-mode {
+                display: flex;
+                justify-content: flex-end;
+            }
 
             &.open {
                 visibility: visible;
-                position: fixed;
-                top: 75px;
+                display: block;
+                opacity: 1;
             }
-        }
-    }
 
-    @media (min-width: 1215px) {
-        position: fixed;
-        display: block;
-
-        .header-list {
-            display: block;
+            .gg-moon {
+                transform: rotate(-135deg) scale(var(--ggs, 1.5));
+            }
         }
     }
 }
@@ -153,6 +163,7 @@ footer {
 
     .footer-list {
         display: flex;
+        font-family: "Lato", sans-serif;
 
         .footer-item {
             display: flex;
@@ -168,11 +179,23 @@ footer {
 .main-content {
     min-height: 100vh;
     padding: 0 15px;
-    transition: all 0.5s;
+    transition: opacity 0.5s linear;
 
-    @media (min-width: 1215px) {
-        margin-left: 258px;
-        max-width: 928px;
+    h1, h2, h3, h4, h5, p, ul, pre {
+        max-width: 1050px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .code {
+        font-size: 16px;
+        margin: 30px auto;
+    }
+
+    @media (max-width: 768px) {
+        &.hidden {
+            opacity: 0;
+        }
     }
 
     .post-link {
@@ -246,7 +269,7 @@ footer {
 /* menu */
 .gg-menu {
     transform: scale(var(--ggs,1.5));
-    transition: all 0.5s;
+    transition: all 0.5s linear;
     margin: 50% auto auto auto;
 }
 
@@ -258,7 +281,8 @@ footer {
     width: 20px;
     height: 2px;
     border-radius: 3px;
-    background: currentColor
+    background: currentColor;
+    transition: all 0.5s linear;
 }
 
 .gg-menu::before {
@@ -266,3 +290,4 @@ footer {
     position: absolute;
     top: -6px
 }
+
