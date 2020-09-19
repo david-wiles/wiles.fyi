@@ -1,4 +1,6 @@
 /* Overall styling */
+@import "components/utilities.scss";
+
 body, html {
     margin: 0;
     padding: 0;
@@ -39,7 +41,9 @@ hr {
 
 /* class styling */
 .dark {
-    color: whitesmoke !important;
+    &:not(.fixed-style) {
+        color: whitesmoke !important;
+    }
 }
 
 header {

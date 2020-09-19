@@ -1,7 +1,9 @@
 let theme = 'light';
 let selectors = "h1, h2, h3, h4, h5, h6, p, li, a, i";
+let originalBgColor;
 
 document.addEventListener('DOMContentLoaded', () => {
+  originalBgColor = document.body.style.backgroundColor;
   if (localStorage.getItem("theme") === 'dark') {
     toggleTheme();
   }
@@ -15,7 +17,7 @@ function toggleTheme() {
     localStorage.setItem("theme", theme);
   } else {
     theme = 'light';
-    document.body.style.backgroundColor = 'white';
+    document.body.style.backgroundColor = originalBgColor;
     document.querySelectorAll(selectors).forEach((el) => el.classList.remove("dark"));
     localStorage.setItem("theme", theme);
   }

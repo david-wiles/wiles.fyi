@@ -6,17 +6,25 @@
   "author": "David Wiles <davidwiles33@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "build:dev": "cmd-cv -r html -o www & node-sass scss -o www/static/css & webpack --mode=development",
+    "build:prod": "cmd-cv -r html -o www & node-sass scss -o www/static/css & webpack --mode=production",
     "build:html": "cmd-cv -r html -o www",
     "watch:html": "cmd-cv -r html -o www -w",
-    "build:scss": "node-sass scss/* --output www/static/css",
-    "watch:scss": "node-sass scss/* --output www/static/css --watch",
-    "serve": "http-server www"
+    "build:scss": "node-sass scss -o www/static/css",
+    "watch:scss": "node-sass -w scss -o www/static/css",
+    "build:js": "webpack",
+    "watch:js": "webpack --watch",
+    "serve": "http-server www",
+    "watch": "cmd-cv -r html -o www -w & node-sass -w scss -o www/static/css & webpack --watch --mode=development; fg"
   },
   "dependencies": {
-    "node-sass": "^4.14.1",
-    "site-generator": "https://github.com/david-wiles/site-generator.git"
+    "cmd-cv": "https://github.com/david-wiles/site-generator.git#develop",
+    "node-sass": "^4.14.1"
   },
   "devDependencies": {
-    "http-server": "^0.12.3"
+    "http-server": "^0.12.3",
+    "sass": "^1.26.11",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
   }
 }
