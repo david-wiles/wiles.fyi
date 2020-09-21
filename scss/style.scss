@@ -1,5 +1,5 @@
 /* Overall styling */
-@import "components/utilities.scss";
+@import "common/utilities.scss";
 
 body, html {
     margin: 0;
@@ -55,7 +55,7 @@ header {
         padding: 25px 0 0 25px;
         margin: -17px 0 0 0;
         opacity: 1;
-        transition: opacity 0.5s linear;
+        transition: opacity 0.25s linear;
         font-family: 'Lato', sans-serif;
         font-weight: 900;
 
@@ -80,7 +80,7 @@ header {
     .header-list {
         display: flex;
         opacity: 1;
-        transition: opacity 0.5s linear;
+        transition: opacity 0.25s linear;
         font-family: "Lato", sans-serif;
 
         .header-item {
@@ -88,6 +88,10 @@ header {
             margin-bottom: 0.3em;
             font-size: 20px;
             padding-right: 60px;
+
+            &#color-scheme {
+                padding-top: 5px;
+            }
         }
 
         a {
@@ -114,7 +118,7 @@ header {
     @media (max-width: 768px) {
         .hamburger {
             display: flex;
-            transition: all 0.5s linear;
+            transition: all 0.25s linear;
 
             &.open {
                 .gg-menu {
@@ -183,7 +187,7 @@ footer {
 .main-content {
     min-height: 100vh;
     padding: 0 15px;
-    transition: opacity 0.5s linear;
+    transition: opacity 0.25s linear;
 
     h1, h2, h3, h4, h5, p, ul, pre {
         max-width: 1050px;
@@ -273,7 +277,7 @@ footer {
 /* menu */
 .gg-menu {
     transform: scale(var(--ggs,1.5));
-    transition: all 0.5s linear;
+    transition: all 0.25s linear;
     margin: 50% auto auto auto;
 }
 
@@ -286,7 +290,7 @@ footer {
     height: 2px;
     border-radius: 3px;
     background: currentColor;
-    transition: all 0.5s linear;
+    transition: all 0.25s linear;
 }
 
 .gg-menu::before {

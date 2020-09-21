@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
   if (localStorage.getItem("theme") === 'dark') {
     toggleTheme();
   }
+
+  document.querySelector("#color-scheme").addEventListener("click", toggleTheme);
+  document.querySelector("#hamburger").addEventListener("click", toggleMenu);
 });
 
 function toggleTheme() {
@@ -29,3 +32,4 @@ function toggleMenu() {
   document.querySelectorAll(".main-content, .header-logo")
     .forEach((el) => el.classList.toggle("hidden"));
 }
+

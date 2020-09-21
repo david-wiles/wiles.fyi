@@ -6,24 +6,28 @@
   "author": "David Wiles <davidwiles33@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build:dev": "cmd-cv -r html -o www & node-sass scss -o www/static/css & webpack --mode=development",
-    "build:prod": "cmd-cv -r html -o www & node-sass scss -o www/static/css & webpack --mode=production",
     "build:html": "cmd-cv -r html -o www",
     "watch:html": "cmd-cv -r html -o www -w",
-    "build:scss": "node-sass scss -o www/static/css",
-    "watch:scss": "node-sass -w scss -o www/static/css",
-    "build:js": "webpack",
-    "watch:js": "webpack --watch",
+    "build:scss": "node bin/scss.js -f scss/style.scss scss/index.scss -o www/static/css",
+    "watch:scss": "node bin/scss.js -f scss/style.scss scss/index.scss -o www/static/css -w scss",
+    "build:js": "webpack --mode=production",
+    "watch:js": "webpack --watch --mode=development",
+    "build:dev": "yarn run build:html && yarn run build:scss && webpack --mode=development",
+    "build:prod": "yarn run build:html && yarn run build:scss && yarn run build:js",
     "serve": "http-server www",
-    "watch": "cmd-cv -r html -o www -w & node-sass -w scss -o www/static/css & webpack --watch --mode=development; fg"
+    "watch": "yarn run watch:html & yarn run watch:scss & yarn run watch:js; fg",
+    "deploy:staging": "node bin/publish.js www staging.wiles.fyi",
+    "deploy:prod": "node bin/publish.js www wiles.fyi",
+    "publish:prod": "yarn run build:prod && yarn run deploy:prod",
+    "publish:staging": "yarn run build:dev && yarn run deploy:staging"
   },
   "dependencies": {
     "cmd-cv": "https://github.com/david-wiles/site-generator.git#develop",
+    "commander": "^6.1.0",
     "node-sass": "^4.14.1"
   },
   "devDependencies": {
     "http-server": "^0.12.3",
-    "sass": "^1.26.11",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"
   }
