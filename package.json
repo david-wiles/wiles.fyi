@@ -6,20 +6,17 @@
   "author": "David Wiles <davidwiles33@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "clean": "rm -rf www",
     "build:html": "cmd-cv -r html -o www",
     "watch:html": "cmd-cv -r html -o www -w",
     "build:scss": "node bin/scss.js -f scss/style.scss scss/index.scss -o www/static/css",
     "watch:scss": "node bin/scss.js -f scss/style.scss scss/index.scss -o www/static/css -w scss",
     "build:js": "webpack --mode=production",
     "watch:js": "webpack --watch --mode=development",
-    "build:dev": "yarn run build:html && yarn run build:scss && webpack --mode=development",
-    "build:prod": "yarn run build:html && yarn run build:scss && yarn run build:js",
+    "build:dev": "cp -R assets/ www/ && yarn run build:html && yarn run build:scss && webpack --mode=development",
+    "build:prod": "cp -R assets/ www/ && yarn run build:html && yarn run build:scss && yarn run build:js",
     "serve": "http-server www",
-    "watch": "yarn run watch:html & yarn run watch:scss & yarn run watch:js; fg",
-    "deploy:staging": "node bin/publish.js www staging.wiles.fyi",
-    "deploy:prod": "node bin/publish.js www wiles.fyi",
-    "publish:prod": "yarn run build:prod && yarn run deploy:prod",
-    "publish:staging": "yarn run build:dev && yarn run deploy:staging"
+    "watch": "yarn run watch:html & yarn run watch:scss & yarn run watch:js; fg"
   },
   "dependencies": {
     "cmd-cv": "https://github.com/david-wiles/site-generator.git#develop",
