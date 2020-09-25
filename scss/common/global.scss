@@ -1,0 +1,44 @@
+@import "variables";
+
+/* General */
+body, html {
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-family: $serif;
+    font-weight: 400;
+    font-size: 20px;
+
+    ::selection {
+        background: $light-salmon;
+    }
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: $sans-serif;
+    font-weight: 900;
+}
+
+b {
+    font-weight: 600;
+}
+
+blockquote {
+    font-weight: 400;
+    font-size: 13pt;
+    background-color: whitesmoke;
+    padding: 1em;
+}
+
+a {
+    color: cornflowerblue;
+}
+
+a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+hr {
+    border: 0.5px solid #f0f0f0;
+}

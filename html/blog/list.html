@@ -1,4 +1,7 @@
 {{ #replace# "blueprints/content.html" }}
-<p class="sans-serif centered">
-  As you can see, I have yet to write my first post...
-</p>
+
+<ul class="no-bullet">
+  <li>
+    {{ template "components/blog-post-li.html" "data/this-website-creating-a-static-site.json" }}
+  </li>
+</ul>

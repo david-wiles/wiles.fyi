@@ -1,0 +1,26 @@
+@import "variables";
+@import "utilities";
+
+footer {
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+
+    .footer-list {
+        display: flex;
+        font-family: $sans-serif;
+
+        .footer-item {
+            display: flex;
+            margin-right: 50px;
+
+            a {
+                z-index: 1;
+                color: black;
+                position: relative;
+
+                @include square-link-background($soft-yellow);
+            }
+        }
+    }
+}
