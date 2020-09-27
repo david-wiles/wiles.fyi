@@ -3,7 +3,7 @@
 .gg-moon::after {
     display: block;
     box-sizing: border-box;
-    border-radius: 50%
+    border-radius: 50%;
 }
 
 .gg-moon {
@@ -15,6 +15,14 @@
     border: 2px solid;
     border-bottom-color: transparent;
     cursor: pointer;
+
+    &.dark {
+        color: whitesmoke;
+
+        &::after {
+            color: whitesmoke;
+        }
+    }
 }
 
 .gg-moon::after {
@@ -25,7 +33,7 @@
     border: 2px solid transparent;
     box-shadow: 0 0 0 2px;
     top: 8px;
-    left: 2px
+    left: 2px;
 }
 
 /* menu */
@@ -33,6 +41,15 @@
     transform: scale(var(--ggs,1.5));
     transition: all 0.25s linear;
     margin: 50% auto auto auto;
+
+    /* for WebKit */
+    &.dark {
+        background: whitesmoke;
+
+        &::before {
+            background: whitesmoke;
+        }
+    }
 }
 
 .gg-menu,
@@ -43,7 +60,7 @@
     width: 20px;
     height: 2px;
     border-radius: 3px;
-    background: currentColor;
+    background: black;
     transition: all 0.25s linear;
 }
 
