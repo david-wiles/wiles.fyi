@@ -155,4 +155,20 @@
 <p>Once I’ve done all of the above, I usually don’t have any trouble moving forward with a project.</p>
 ]]></content>
     </entry>
+    <entry>
+        <title>Classic Asteroids</title>
+        <link href="https://wiles.fyi/blog/classic-asteroids.html"/>
+        <updated>2020-10-19T00:00:00-00:00</updated>
+        <id>https://wiles.fyi/blog/classic-asteroids.html</id>
+        <content type="html"><![CDATA[<p>One of first hits of the arcade era was Atari’s Asteroids. I would be willing to bet that anyone who has played video
+  games has played a version of this game at some point; it is up there with Space Invaders as one of the most well
+  known games of all time. For this reason, I’ve decided to remake it in a web-based version.</p>
+
+<p>You can play the game here: <a href="https://wiles.fyi/asteroids.html">https://wiles.fyi/asteroids.html</a></p>.
+
+<p>I’ll make another post in the future describing my implementation in depth, but for the present, you can find the
+  repository on github here: <a href="https://github.com/david-wiles/asteroids-ts">https://github.com/david-wiles/asteroids-ts<i
+      class="gg-external"></i></a>.</p>
+]]></content>
+    </entry>
 </feed>
