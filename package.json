@@ -19,7 +19,7 @@
     "watch": "yarn run watch:html & yarn run watch:scss & yarn run watch:js; fg"
   },
   "dependencies": {
-    "cmd-cv": "https://github.com/david-wiles/site-generator.git",
+    "cmd-cv": "david-wiles/site-generator#master",
     "commander": "^6.1.0",
     "node-sass": "^4.14.1"
   },
