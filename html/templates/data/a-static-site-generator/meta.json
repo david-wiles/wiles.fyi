@@ -1,0 +1,8 @@
+{
+  "title": "A Static Site Generator",
+  "date": "November 28th, 2020",
+  "description": "My very own static site generator, which I've decided to name ⌘-cv",
+  "preview": "<a href=\"https://wiles.fyi/projects/a-static-site-generator.html\">A Static Site Generator</a>",
+  "content": "{{ template \"components/blog-post.html\" \"data/a-static-site-generator/content.json\" }}",
+  "href": "/projects/a-static-site-generator.html"
+}
