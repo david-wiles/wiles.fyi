@@ -14,7 +14,7 @@
     "build:js": "webpack --mode=production",
     "watch:js": "webpack --watch --mode=development",
     "build:dev": "cp -R assets/ www/ && yarn run build:html && yarn run build:scss && webpack --mode=development",
-    "build:prod": "cp -R assets/ www/ && yarn run build:html && yarn run build:scss && yarn run build:js && node inline.js www",
+    "build:prod": "rm -rf www && cp -R assets/ www/ && yarn run build:html && yarn run build:scss && yarn run build:js && node inline.js www",
     "serve": "http-server www",
     "watch": "yarn run watch:html & yarn run watch:scss & yarn run watch:js; fg"
   },
