@@ -712,7 +712,7 @@ cliui@^5.0.0:
     strip-ansi "^5.2.0"
     wrap-ansi "^5.1.0"
 
-cmd-cv@david-wiles/site-generator#js-conversion:
+cmd-cv@david-wiles/site-generator:
   version "0.0.2"
   resolved "https://codeload.github.com/david-wiles/site-generator/tar.gz/efb057888ef341b167a8cd1cbe49998cd982b5e4"
   dependencies:
