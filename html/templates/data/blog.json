@@ -1,4 +1,4 @@
 {
   "title": "David's Blog - All Posts",
-  "posts": "{{ template \"components/blog-post-li.html\" \"data/starting-a-new-software-project/meta.json\" }}"
+  "posts": "{{ template \"components/blog-post-li.html\" \"data/getting-the-optimal-v60-flavor/meta.json\" }}\n{{ template \"components/blog-post-li.html\" \"data/starting-a-new-software-project/meta.json\" }}"
 }

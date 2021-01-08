@@ -2,20 +2,46 @@
 @import "utilities";
 
 .main-content {
-    min-height: 100vh;
     padding: 15px;
     transition: opacity 0.25s linear;
     margin: auto;
     max-width: 1440px;
 
+    &.article {
+        display: grid;
+        grid-template-columns: 1fr MIN(80ch, 100%) 1fr;
+    }
+
+    &.list {
+        display: grid;
+        grid-template-columns: 1fr MIN(100ch, 100%) 1fr;
+    }
+
+    > * {
+        grid-column: 2;
+        margin: 15px 0;
+    }
+
+    .full-bleed {
+        grid-column: 1/ -1;
+    }
+
     &.dark {
         background-color: $dark;
     }
 
-    h1, h2, h3, h4, h5, p, ul, pre {
-        max-width: 1050px;
-        margin-left: auto;
-        margin-right: auto;
+    h2, h3, h4, h5 {
+        margin-bottom: 0;
+    }
+
+    img {
+        + small {
+            margin-top: 0;
+        }
+
+        &.contain {
+            max-width: 100%;
+        }
     }
 
     .code {
