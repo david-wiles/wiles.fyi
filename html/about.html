@@ -1,32 +1,29 @@
 <!doctype html>
 <html lang="en">
-<head>
-  {{template "components/head.html"}}
-  <title>David's Blog</title>
-</head>
+{{template "head.html" . }}
 <body>
-
-{{template "components/header.html"}}
+{{template "header.html"}}
 
 <div class="main-content article">
-  <h1>
-    👋 Hi! This is my blog.
-  </h1>
+    <h1>
+        👋 Hi! This is my blog.
+    </h1>
 
-  <p>
-    I'm a full-stack software developer who works on websites. I'm passionate about programming and love to learn about
-    all things software. My other passions involve classical music, coffee, and weightlifting.
-  </p>
+    <p>
+        I'm a full-stack software developer who works on websites. I'm passionate about programming and love to learn
+        about all things software. My other passions involve classical music, coffee, and weightlifting.
+    </p>
 
-  <p>
-    I'm also a graduate student researching serverless computing. I've recently finished a proof-of-concept serverless
-    platform using Docker to run serverless applications in containers from pre-built images. You can find the code at
-    <a href="https://github.com/david-wiles/container-paas">github.com/david-wiles/container-paas</a>.
-  </p>
+    <p>
+        I'm also a graduate student researching serverless computing. I've recently finished a proof-of-concept
+        serverless platform using Docker to run serverless applications in containers from pre-built images. You can
+        find the code at <a
+                href="https://github.com/david-wiles/container-paas">github.com/david-wiles/container-paas</a>.
+    </p>
 
 </div>
 
-{{template "components/footer.html"}}
+{{template "footer.html"}}
 <script src="/static/js/index.js"></script>
 </body>
 </html>

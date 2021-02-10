@@ -1,0 +1,85 @@
+<h1>{{ .title }}</h1>
+
+<p>When I started working on what I thought would be my blog, I thought that it would be easy to create a static
+    website. After all, it’s just HTML, right…? The first iteration of my blog turned out to be a flop, as did the second
+    and third. Although a static website is just HTML (and CSS and JS), there are plenty of other considerations going
+    into design and architecture decisions that I didn’t anticipate.
+</p>
+<p>
+    As a developer, I wanted to create a website using the newest and hottest web stack. However, I learned that this
+    approach was somewhat missing the point. Software architecture should fit the needs of the project, and the needs for
+    this site are pretty small. Modern single-page applications are great for applications, but I found them to be
+    overkill for my little blog. This blog started as a SPA with a Go backend, then transformed into a dynamically
+    generated site using Go, and finally found life as a static site generated from compiled templates and SCSS files,
+    along with a few vanilla JS files.
+</p>
+<h2>
+    Frameworks
+</h2>
+<p>
+    Static websites are almost as old as the internet, so the concepts of static site generators and templating engines
+    have been around for a long time. Today, there are plenty of fantastic and robust frameworks to choose from. Hugo,
+    Jekyll, Gatsby, and Eleventy are some of the more popular ones, and each boast many features to streamline the
+    development process. Their command line interfaces to make it easy to create a site and generate pages with little
+    effort. The templating engines in the support markup languages, data files, and logical expressions.
+</p>
+<p>
+    Despite the rich ecosystem that these frameworks enjoy, I still chose to create my own site generator from scratch for
+    fun. I call it.. ⌘-cv.
+</p>
+<h2>
+    ⌘-CV
+</h2>
+<p>
+    ⌘-CV (pronounced command C V and named for the copy-paste keys on macOS) is my very own static site generator. It
+    consumes partial HTML templates and JSON data and combines them into a single HTML file. It works just like any other
+    templating engine; mine is different due to how little it really does. The program can do two things:
+</p>
+<ul>
+    <li>Copy an HTML template into another one by replacing placeholder syntax</li>
+    <li>Replace placeholder syntax with data from a JSON file</li>
+</ul>
+<p>
+    I think that this is all that is needed to keep a static website DRY, especially for my limited needs. My site is very
+    simple, so I don’t need any complex templating features.
+</p>
+
+<p>Although I’m sure that if I was proficient with a framework like Hugo I could create an identical site in less time,
+    I feel like it would be overkill for my needs. In fact, the amount of time it took me to write the site generator was
+    similar to the time it would have taken me to learn Hugo (or any other framework) well enough to produce the same
+    product. Although you could argue that it would be better to use a well-tested framework (and you would be right), I
+    think that there is more experience to gain and joy to be had from creating a software project and using it.
+</p>
+
+<p>You can find more about this project here: <a href="/projects/a-static-site-generator.html">https://david.wiles.fyi/projects/a-static-site-generator.html</a>.
+</p>
+
+<h2>Hosting</h2>
+
+<p>There has been an explosion in the number of cloud service providers in the past few years. Choosing between AWS,
+    GCP, Azure, or some other service seemed like a matter of guessing at first. The big three are essentially identical,
+    especially for my needs. I actually ended up going with “other”, which turned out to be Render.
+</p>
+
+<p>Initially I chose Google Cloud Platform. The deciding factors were very minor: I bought my domain from Google and
+    their tutorial was easy to follow. Unfortunately, GCP is somewhat overkill for my needs right now. The total cost for
+    minor traffic (very just me) was about $0.60 per day. Not much, but that adds up to nearly $20 per month, which was
+    more than I wanted to spend at this point. Hosting a static site on GCP would be more cost-efficient for an enterprise
+    or larger organization, since the minimum viable project requires a storage bucket and two load balancers (one for the
+    storage bucket, and another for HTTP to HTTPS redirects). After doing some quick Googling, I found about another cloud
+    service provider called Render, which sounded especially fit for my needs.
+</p>
+
+<p>If you haven’t heard of Render, it’s a cloud hosting service specializing in serverless backends and marketing itself
+    as a Heroku alternative. They offer many of the same services of other cloud providers, but their static website
+    offering has all of the features expected from a static site in 2020. They issue and manage SSL certificates, use
+    HTTP/2 by default, automatically compress pages, and best of all, static site hosting is free! It was the cost that
+    made the decision a no-brainer, but it would still be a convincing alternative otherwise.
+</p>
+
+<h2>Conclusion</h2>
+
+<p>Creating a static site from scratch and hosting it on my own domain has been more challenging than expected, but very
+    rewarding. One of the joys of software development is creating something, especially if that thing can be used by many
+    people.
+</p>

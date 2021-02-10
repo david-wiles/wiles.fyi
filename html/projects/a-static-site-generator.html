@@ -1,1 +1,14 @@
-{{ template "blueprints/content.html" "data/a-static-site-generator/meta.json" }}
+<!doctype html>
+<html lang="en">
+{{template "head.html" .}}
+<body>
+{{template "header.html"}}
+
+<main class="main-content article">
+    {{ template ".data/a-static-site-generator.html/content.html" .}}
+</main>
+
+{{template "footer.html"}}
+<script src="/static/js/index.js"></script>
+</body>
+</html>

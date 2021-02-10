@@ -1,1 +1,18 @@
-{{ template "blueprints/list.html" "data/projects.json" }}
+<!doctype html>
+<html lang="en">
+{{template "head.html" .}}
+<body>
+{{template "header.html"}}
+
+<main class="main-content list">
+    <ul class="no-bullet">
+        {{ range $post := .posts }}
+            {{template "components/blog-post-li.html" $post}}
+        {{end}}
+    </ul>
+</main>
+
+{{template "footer.html"}}
+<script src="/static/js/index.js"></script>
+</body>
+</html>

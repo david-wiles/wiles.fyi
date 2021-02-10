@@ -7,8 +7,8 @@
   "license": "MIT",
   "scripts": {
     "clean": "rm -rf www",
-    "build:html": "cmd-cv -r html -o www",
-    "watch:html": "cmd-cv -r html -o www -w",
+    "build:html": "/Users/davidwiles/go/bin/bloghead publish",
+    "watch:html": "./bin/bloghead publish -w",
     "build:scss": "node-sass scss/ -o www/static/css/",
     "watch:scss": "yarn run build:scss && node-sass -w scss/ -o www/static/css/",
     "build:js": "webpack --mode=production",
@@ -19,12 +19,9 @@
     "watch": "yarn run watch:html & yarn run watch:scss & yarn run watch:js; fg"
   },
   "dependencies": {
-    "cmd-cv": "david-wiles/site-generator",
-    "commander": "^6.1.0",
     "node-sass": "^4.14.1"
   },
   "devDependencies": {
-    "http-server": "^0.12.3",
     "webpack": "^4.44.2",
     "webpack-cli": "^3.3.12"
   }
