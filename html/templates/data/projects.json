@@ -1,4 +1,0 @@
-{
-  "title": "David's Projects",
-  "posts": "{{ template \"components/blog-post-li.html\" \"data/a-static-site-generator/meta.json\" }}\n{{ template \"components/blog-post-li.html\" \"data/classic-asteroids/meta.json\" }}\n{{ template \"components/blog-post-li.html\" \"data/this-website-creating-a-static-site/meta.json\" }}\n"
-}

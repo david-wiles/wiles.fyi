@@ -1,28 +1,24 @@
 <!doctype html>
 <html lang="en">
-<head>
-  {{template "components/head.html"}}
-  <title>David's Blog</title>
-</head>
+{{template "head.html" .}}
 <body>
-
-{{template "components/header.html"}}
+{{template "header.html"}}
 
 <div class="main-content article">
-  <h1>David's Blog</h1>
-  <p>
-    Thanks for visiting my website. I use the blog directory to write about the things that interest me and the
-    projects directory to talk about new projects I'm working on, software or other.
-  </p>
-  <p>
-    Recently discovered Ben Stoke's <a href="https://tinyprojects.dev/">Tiny Projects Blog</a>, and I was inspired to pursue
-    the same goals as his: create a new tiny(ish) project every few weeks and actually complete it. I've been able to do
-    this somewhat over the past few months, and you can read about these projects under the <a
-      href="/projects/list.html">projects tab.</a>
-  </p>
+    <h1>David's Blog</h1>
+    <p>
+        Thanks for visiting my website. I use the blog directory to write about the things that interest me and the
+        projects directory to talk about new projects I'm working on, software or other.
+    </p>
+    <p>
+        Recently discovered Ben Stoke's <a href="https://tinyprojects.dev/">Tiny Projects Blog</a>, and I was inspired to pursue
+        the same goals as his: create a new tiny(ish) project every few weeks and actually complete it. I've been able to do
+        this somewhat over the past few months, and you can read about these projects under the <a
+                href="/projects/list.html">projects tab.</a>
+    </p>
 </div>
 
-{{template "components/footer.html"}}
+{{template "footer.html"}}
 <script src="/static/js/index.js"></script>
 </body>
 </html>

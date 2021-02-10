@@ -1,0 +1,99 @@
+<h1>{{ .title }}</h1>
+
+<p>
+    One of the first projects I completed this year was out of necessity for this website: a static site generator.
+    Although there are many (probably thousands) of perfectly good static site generation frameworks out there, I didn’t
+    want to spend the time learning new syntax and CLI commands. My final implementation is very simple, a bare-bones
+    template engine.
+</p>
+
+<h2>Origins
+</h2>
+
+<p>The website I created the site generator for (this website) went through several iterations of architectural designs,
+    which is described in more detail in this post. Once I had finally abandoned a Wordpress-style generated site for a
+    statically generated site, I needed to chose a project to create the static HTML files, and my final decision was to
+    simply make my own. My site is a simple blog with very simple requirements, so the final product has functionality to
+    meet them.
+</p>
+
+<h2>Syntax
+</h2>
+
+<p>There are plenty of options for commonly used syntax in template engines, but most will either mimic HTML syntax by
+    adding tags with special meaning or use special characters to denote meaning in the syntax. I modeled mine after the
+    template language used by Go (which is also very similar to the Jinja2 template syntax).
+</p>
+
+<p>There are only two statements in the syntax:
+</p>
+<ul>
+    <li>
+        <strong>{{"{{ template “&lt;template to insert&gt;” [“&lt;data file to use&gt;”] }}"}}</strong> - used to insert the specified template into the current location in the file. The
+        template is located relative to the current template directory, which is the templates/ directory under the root
+        directory of the project
+    </li>
+    <li>
+        <strong>{{"{{ &lt;data key&gt; }}"}}</strong> - inserts the value with the specified key in the current context. To simplify things, the context
+        does not extend past the current template. This content is specified using the second argument to the template
+        function.
+    </li>
+</ul>
+
+<h2>Development Process</h2>
+
+<p>If you look through the commit history for this project you will find that this was originally built with TypeScript.
+    Although TypeScript is a wonderful language, it added too much complexity to an otherwise simple project, and the
+    newest version is a basic JavaScript project.
+</p>
+
+<p>In the original TypeScript version of the project, I put too much emphasis on extendability. The project was setup
+    similar to Webpack, where each file is processed through a pipeline with the output of one step as the input to
+    another. Although this could be useful if other transformations to the HTML were required (such as minification), this
+    turned out to be out of the scope of the project and somewhat unnecessary due to the existence of established build
+    tools.
+</p>
+<p>Additionally, one of my original plans was to include an optional Markdown to HTML transformation step in the
+    pipeline. There are many advantages to this, but one of the bigger advantages is to enable people without knowledge of
+    HTML to create web pages. It turned out to be extra complexity that my project didn’t need, so I ended up scrapping
+    the original project in lieu of a plain JS project without a complicated pipeline built into the project.
+</p>
+
+<h2>Latest</h2>
+
+<p>The latest version of this project can be found on GitHub at <a href="https://github.com/david-wiles/site-generator">github.com/david-wiles/site-generator</a>. It is a
+    plain nodeJS project which can be used from the command line or programmatically. There are only three command options
+    to be used by the CLI: —root, —out, and —watch. The flags indicate the root directory, output directory, and whether
+    to watch the directory for file changes, respectively.
+</p>
+<p>Three functions are exposed in the project’s index.js: build, buildDir, and watch.</p>
+
+<pre><code class="language-js">
+  build(template: string, tDir: string): string
+</code></pre>
+
+<p>build() will build the HTML file found at the specified path, using the tDir as the base directory to search for
+    templates.
+</p>
+
+<pre><code class="language-js">
+  buildDir(dir: string, out: string): void
+</code></pre>
+
+<p>buildDir() looks through the directory and builds all pages not located in a directory called “/templates” directly
+    under the root directory. Files are written to the specified output directory.
+</p>
+
+<pre><code class="language-js">
+  watch(dir: string, out: string): void
+</code></pre>
+
+<p>
+    watch() is similar to buildDir(), except that files are only written when changes are detected.
+</p>
+
+<p>
+    I use this project to generate the HTML files for this site, and then use more build steps to inline the JS and CSS.
+    Since I've started using the project for an actual site, I see why other static site generators have a CLI built-in to
+    generate project files. However, I'm still enjoying using my little site generator to make this website.
+</p>
