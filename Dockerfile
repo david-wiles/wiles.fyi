@@ -8,5 +8,5 @@ COPY ./www ./www
 
 EXPOSE 8080
 
-CMD ["npm", "run", "serve", "www"]
+CMD ["http-server", "www"]
 

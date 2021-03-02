@@ -2,10 +2,10 @@
   "title": "David Wiles' Blog - Projects",
   "posts": [
     {
-      "title": "This Website: Creating a Static Site",
+      "title": "A Static Site Generator",
       "updated": "2020-11-28T00:00:00-00:00",
-      "humanDate": "September 24th, 2020",
-      "link": "/projects/this-website-creating-a-static-site.html"
+      "humanDate": "November 28th, 2020",
+      "link": "/projects/a-static-site-generator.html"
     },
     {
       "title": "Classic Asteroids",
@@ -14,10 +14,10 @@
       "link": "/projects/classic-asteroids.html"
     },
     {
-      "title": "A Static Site Generator",
+      "title": "This Website: Creating a Static Site",
       "updated": "2020-11-28T00:00:00-00:00",
-      "humanDate": "November 28th, 2020",
-      "link": "/projects/a-static-site-generator.html"
+      "humanDate": "September 24th, 2020",
+      "link": "/projects/this-website-creating-a-static-site.html"
     }
   ]
 }
