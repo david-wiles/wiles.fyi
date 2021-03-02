@@ -1,6 +1,14 @@
 {
   "title": "Classic Asteroids",
+  "subtitles": "A TypeScript implementation of a classic arcade game",
+  "description": "A fun little toy game implemented in TypeScript with no dependencies other than the browser itself",
+  "author": "David Wiles",
+  "genre": "software",
+  "keywords": "software typescript web-dev classic-games",
+  "createdDate": "2020-10-19",
+  "updatedDate": "2020-10-19",
   "updated": "2020-10-19T00:00:00-00:00",
   "humanDate": "October 19th, 2020",
-  "link": "/projects/classic-asteroids.html"
+  "link": "/projects/classic-asteroids.html",
+  "url": "https://david.wiles.fyi/projects/classic-asteroids.html"
 }

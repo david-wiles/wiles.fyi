@@ -1,6 +1,14 @@
 {
   "title": "Starting a New Software Project",
+  "subtitle": "Tips on how to start on a new software project",
+  "description": "I have found that one of the barriers to starting a new software project is the project planning instead of the technical aspects, even on personal projects. Here are a few methods I've found to be handy when I'm starting on a new personal project.",
+  "author": "David Wiles",
+  "genre": "software development",
+  "keywords": "software-development software-engineering",
+  "createdDate": "2020-10-06",
+  "updatedDate": "2020-10-06",
   "updated": "2020-10-06T00:00:00-00:00",
   "humanDate": "October 6th, 2020",
-  "link": "/blog/starting-a-new-software-project.html"
+  "link": "/blog/starting-a-new-software-project.html",
+  "url": "https://david.wiles.fyi/blog/starting-a-new-software-project.html"
 }

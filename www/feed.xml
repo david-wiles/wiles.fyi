@@ -1,0 +1,402 @@
+<feed><title>David Wiles&#39; Blog</title><subtitle>David Wiles is a full-stack web developer.</subtitle><link href="https://david.wiles.fyi/feed.xml" rel="self" type="application/atom+xml"></link><link href="https://david.wiles.fyi" rel="alternate" type="text/html"></link><updated>2021-03-01T22:21:33-06:00</updated><id>david.wiles.fyi</id><author><name>David Wiles</name><email>david@wiles.fyi</email></author><entry><title>Starting a New Software Project</title><link href="https://david.wiles.fyi/html/blog/starting-a-new-software-project.html" rel="" type=""></link><updated>2020-10-06T00:00:00-00:00</updated><id>david.wiles.fyi/html/blog/starting-a-new-software-project.html</id><content type="html"><![CDATA[<h1>Starting a New Software Project</h1>
+
+<p>The phrase “writer’s block” is used to describe the feeling of getting stuck when starting a new project. Although
+    the true meaning of writer’s block is closer to a years-long “creative drought” almost everyone has this shared
+    experience and developers are no different. Making progress on a new project can be a slow and tedious process,
+    especially for inexperienced programmers. I believe that the reasons for this are not due to the skill of the
+    programmer, but a combination of inexperience and lack of confidence.
+</p>
+
+<h2>
+    Development Process
+</h2>
+<p>
+    Even for personal projects, it helps to follow some kind of process to guide along progress. There have been countless
+    books written, blog posts posted, and lectures lectured about the topic, but my process follows these general
+    guidelines.
+</p>
+
+<h3>Determine the overall goal of the project.</h3>
+
+<p>It can be as general as needed although it helps to be more specific, and should not be technical at all. This step
+    can also act as a filter for projects that might be better off not done at all: if a high-quality library already
+    exists for the thing you’d like to create and your goal is something other than to gain enjoyment from creating a
+    similar library, it might be best to just use that library.</p>
+
+<h3>Research other projects doing the same thing.</h3>
+<p>Finding other projects which have already solved the same problem will be valuable as a starting point and may help
+    you in your search for frameworks or libraries to use in your own project. In an enterprise setting, it would be wise
+    to use a pre-existing project instead of creating a new one. However, personal projects are fundamentally different
+    than commercial ones. The point of a personal project is often just to gain experience or enjoyment from creating
+    something.</p>
+
+<p>The thought processes started by the first two steps should help start the brainstorming and researching process. At
+    this point, general software development techniques kick in. It can be helpful to create a few small proof of concepts
+    at this point to get a feel for what works and what doesn’t. After this, I follow these steps:</p>
+
+<h3>Sketch a high level overview of the project.</h3>
+<p>This should be very abstract and considers the project as a whole. I feel that it helps to sketch out the components
+    in the project and the flow of data. One major roadblock I run into when starting a new project is deciding what kind
+    of overall architecture I want my project to have, so figuring out how project components will fit together helps to
+    determine how the code will be structured. There are often many valid solutions to a problem, with no clear best
+    choice. Some patterns are quicker to develop with while others are easier to scale and add onto. The first few commits
+    in a project are crucial for the architecture since it is hard to go back and change an entire project to follow a
+    different pattern.</p>
+
+<h3>Create project scaffolding.</h3>
+<p>Lots of frameworks provide this with their cli, such as express-generator. If your project follows a very common
+    design pattern or you are using a popular framework, then this can really speed up your development time (and
+    therefore overcome your writer’s block). If not, it’s not too important at the beginning of the project. If you decide
+    that your project will be more manageable using a different layout, it isn’t too hard to refactor while the project is
+    still small.</p>
+
+<h3>Outline the classes, functions, etc.</h3>
+<p>One aspect that I like about writing C code is that you can create an overview of your project just by writing header
+    files first and implementing them later. You can simulate this in any language though as long as you put in dummy
+    return statements in your functions. I find that this approach is helpful since it forces me to take a top-down
+    approach to development. Taking a top-down approach is also helpful for overcoming writer’s block because I don’t get
+    stuck on implementation details too early.</p>
+
+<p>Once I’ve done all of the above, I usually don’t have any trouble moving forward with a project.</p>
+]]></content></entry><entry><title>Getting the Optimal V60 Flavor</title><link href="https://david.wiles.fyi/html/blog/getting-the-optimal-v60-flavor.html" rel="" type=""></link><updated>2021-01-06T16:10:52-06:00</updated><id>david.wiles.fyi/html/blog/getting-the-optimal-v60-flavor.html</id><content type="html"><![CDATA[<h1>Getting the Optimal V60 Flavor</h1>
+
+<img class="contain" src="/BriosoCoffee_Blog_V60Header_1024x1024.webp" alt="A V60 in action"/>
+<small><em>
+        A V60 in action at <a href="https://briosocoffee.com/">Brioso Coffee</a> in Colombus, OH.
+    </em></small>
+
+<p>
+    <strong>TLDR:</strong> grind finder and pour all at once or grind coarser and keep water level low
+</p>
+
+<p>Out of all non-espresso methods for making coffee, the V60 pour-over is my favorite (and closely followed by the
+    Chemex). It seems to bring out the flavor of many coffees very well, especially those with sweet, fruity, and floral
+    flavors. And unlike the Chemex, this brew method seems to be optimal for making a single cup of coffee.
+</p>
+
+<h2>Technique
+</h2>
+
+<p>There are many ways to brew V60 coffee, but the basic ‘rules’ are to grind fine enough for the coffee to draw down
+    after 2:15-2:45. How this goes from point A to B is not clearly defined though, and there are many opinions on the
+    best way to do this. Generally speaking, the ratio of coffee to water is 1:16 with this brew method, although I have
+    seen some recommendations for anything from 1:14 to 1:18.
+</p>
+
+<p>The pouring technique can be divided into two types: pouring without stopping or pouring in stages. Using multiple
+    pours can extend the brew time and allow for a coarser grind, which may be desirable for certain coffees. The general
+    rule is to let the water draw down while still not allowing the water to draw completely below the coffee bed, since
+    pouring into the coffee can cause turbulence in the brew and over extract the fines.
+</p>
+
+<h2><strong>Method 1: All-at-Once.
+    </strong></h2>
+
+<p>One of the first methods I learned about is probably the simplest. All of the water is poured (slowly) onto the
+    coffee at once until the all the water has been poured.
+</p>
+
+<p>
+    1: 30-second pre-brew with twice the weight of the coffee used
+    <br>
+    2: Pour all the water over the coffee in a circular motion
+</p>
+
+<p>The advantage of this method is that the weight of the water forces the water through the coffee faster than with a
+    multi-stage method. This allows you to grind finer, which will help bring out the flavor in denser coffees.
+</p>
+
+<h2><strong>Method 2: Three stages
+    </strong></h2>
+
+<p>1: 30-second pre-brew
+    2: Pour slightly less than 1/3 of the remaining water over the coffee. This will make a kind of second bloom.
+    <br>
+    3: Pour the next 1/3 of the water weight into the brew
+    <br>
+    4: Pour the remaining water into the brew.
+</p>
+
+<p>This method is a good middle ground between methods 1 & 3 and allows for some correction in brew time without
+    adjusting other parameters. However, I’ve noticed that it can cause the fines in the coffee bed to migrate to the top
+    of the coffee bed, resulting in uneven extraction. Coffees that produce lots of fines will not benefit from this
+    method, but those that are over-extracted by method one could benefit.
+</p>
+
+<h2><strong>Method 3: Many stages
+    </strong></h2>
+
+<p>This one is unique because the subsequent pours are a similar weight to the pre-bloom weight.
+</p>
+<p>
+    1: 30-second pre-brew
+    <br>
+    2: Pour enough water so that the water level increases by around a half inch.
+    <br>
+    3 (and so on): Repeat step 2
+</p>
+
+<p>This method is the most forgiving (since at any time you could decide to pour the rest of the coffee). It requires
+    the coarsest grind, meaning that less dense (and usually darker) coffees will be complemented by this brew method but
+    denser (and usually lighter) coffees won’t be properly extracted.
+</p>
+
+<h2>Conclusion
+</h2>
+
+<p>Finding the right method for a particular coffee can take experimentation. Starting with method 2 may be a good place
+    to start, and then moving to 1 or 3 based on the flavor of that cup. Recently, I’ve found that grinding a little
+    coarser and aiming for the upper range of 2:45 can bring out the flavors in (relatively) darker coffees. This week
+    I’ve been drinking Costa Rica Santa Elena Estate from <a href="https://www.caffevita.com/">Caffe Vita</a> and I’ve found that it shines with this method!</p>
+]]></content></entry><entry><title>A Static Site Generator</title><link href="https://david.wiles.fyi/html/projects/a-static-site-generator.html" rel="" type=""></link><updated>2020-11-28T00:00:00-00:00</updated><id>david.wiles.fyi/html/projects/a-static-site-generator.html</id><content type="html"><![CDATA[<h1>A Static Site Generator</h1>
+
+<p>
+    One of the first projects I completed this year was out of necessity for this website: a static site generator.
+    Although there are many (probably thousands) of perfectly good static site generation frameworks out there, I didn’t
+    want to spend the time learning new syntax and CLI commands. My final implementation is very simple, a bare-bones
+    template engine.
+</p>
+
+<h2>Origins
+</h2>
+
+<p>The website I created the site generator for (this website) went through several iterations of architectural designs,
+    which is described in more detail in this post. Once I had finally abandoned a Wordpress-style generated site for a
+    statically generated site, I needed to chose a project to create the static HTML files, and my final decision was to
+    simply make my own. My site is a simple blog with very simple requirements, so the final product has functionality to
+    meet them.
+</p>
+
+<h2>Syntax
+</h2>
+
+<p>There are plenty of options for commonly used syntax in template engines, but most will either mimic HTML syntax by
+    adding tags with special meaning or use special characters to denote meaning in the syntax. I modeled mine after the
+    template language used by Go (which is also very similar to the Jinja2 template syntax).
+</p>
+
+<p>There are only two statements in the syntax:
+</p>
+<ul>
+    <li>
+        <strong>{{ template “&amp;lt;template to insert&amp;gt;” [“&amp;lt;data file to use&amp;gt;”] }}</strong> - used to insert the specified template into the current location in the file. The
+        template is located relative to the current template directory, which is the templates/ directory under the root
+        directory of the project
+    </li>
+    <li>
+        <strong>{{ &amp;lt;data key&amp;gt; }}</strong> - inserts the value with the specified key in the current context. To simplify things, the context
+        does not extend past the current template. This content is specified using the second argument to the template
+        function.
+    </li>
+</ul>
+
+<h2>Development Process</h2>
+
+<p>If you look through the commit history for this project you will find that this was originally built with TypeScript.
+    Although TypeScript is a wonderful language, it added too much complexity to an otherwise simple project, and the
+    newest version is a basic JavaScript project.
+</p>
+
+<p>In the original TypeScript version of the project, I put too much emphasis on extendability. The project was setup
+    similar to Webpack, where each file is processed through a pipeline with the output of one step as the input to
+    another. Although this could be useful if other transformations to the HTML were required (such as minification), this
+    turned out to be out of the scope of the project and somewhat unnecessary due to the existence of established build
+    tools.
+</p>
+<p>Additionally, one of my original plans was to include an optional Markdown to HTML transformation step in the
+    pipeline. There are many advantages to this, but one of the bigger advantages is to enable people without knowledge of
+    HTML to create web pages. It turned out to be extra complexity that my project didn’t need, so I ended up scrapping
+    the original project in lieu of a plain JS project without a complicated pipeline built into the project.
+</p>
+
+<h2>Latest</h2>
+
+<p>The latest version of this project can be found on GitHub at <a href="https://github.com/david-wiles/site-generator">github.com/david-wiles/site-generator</a>. It is a
+    plain nodeJS project which can be used from the command line or programmatically. There are only three command options
+    to be used by the CLI: —root, —out, and —watch. The flags indicate the root directory, output directory, and whether
+    to watch the directory for file changes, respectively.
+</p>
+<p>Three functions are exposed in the project’s index.js: build, buildDir, and watch.</p>
+
+<pre><code class="language-js">
+  build(template: string, tDir: string): string
+</code></pre>
+
+<p>build() will build the HTML file found at the specified path, using the tDir as the base directory to search for
+    templates.
+</p>
+
+<pre><code class="language-js">
+  buildDir(dir: string, out: string): void
+</code></pre>
+
+<p>buildDir() looks through the directory and builds all pages not located in a directory called “/templates” directly
+    under the root directory. Files are written to the specified output directory.
+</p>
+
+<pre><code class="language-js">
+  watch(dir: string, out: string): void
+</code></pre>
+
+<p>
+    watch() is similar to buildDir(), except that files are only written when changes are detected.
+</p>
+
+<p>
+    I use this project to generate the HTML files for this site, and then use more build steps to inline the JS and CSS.
+    Since I've started using the project for an actual site, I see why other static site generators have a CLI built-in to
+    generate project files. However, I'm still enjoying using my little site generator to make this website.
+</p>
+]]></content></entry><entry><title>Classic Asteroids</title><link href="https://david.wiles.fyi/html/projects/classic-asteroids.html" rel="" type=""></link><updated>2020-10-19T00:00:00-00:00</updated><id>david.wiles.fyi/html/projects/classic-asteroids.html</id><content type="html"><![CDATA[<h1>Classic Asteroids</h1>
+
+<p>One of first hits of the arcade era was Atari’s Asteroids. I would be willing to bet that anyone who has played video
+    games has played a version of this game at some point; it is up there with Space Invaders as one of the most well
+    known games of all time. For this reason, I’ve decided to remake it in a web-based version.</p>
+
+<p>You can play the game here: <a href="/asteroids.html">https://david.wiles.fyi/asteroids.html</a>. The arrow keys control the spaceship, f to shoot and s for shield.</p>
+
+<p>I’ll make another post in the future describing my implementation in depth, but for the present, you can find the
+    repository on github here: <a href="https://github.com/david-wiles/asteroids-ts">https://github.com/david-wiles/asteroids-ts</a>.</p>
+]]></content></entry><entry><title>This Website: Creating a Static Site</title><link href="https://david.wiles.fyi/html/projects/this-website-creating-a-static-site.html" rel="" type=""></link><updated>2020-11-28T00:00:00-00:00</updated><id>david.wiles.fyi/html/projects/this-website-creating-a-static-site.html</id><content type="html"><![CDATA[<h1>This Website: Creating a Static Site</h1>
+
+<p>When I started working on what I thought would be my blog, I thought that it would be easy to create a static
+    website. After all, it’s just HTML, right…? The first iteration of my blog turned out to be a flop, as did the second
+    and third. Although a static website is just HTML (and CSS and JS), there are plenty of other considerations going
+    into design and architecture decisions that I didn’t anticipate.
+</p>
+<p>
+    As a developer, I wanted to create a website using the newest and hottest web stack. However, I learned that this
+    approach was somewhat missing the point. Software architecture should fit the needs of the project, and the needs for
+    this site are pretty small. Modern single-page applications are great for applications, but I found them to be
+    overkill for my little blog. This blog started as a SPA with a Go backend, then transformed into a dynamically
+    generated site using Go, and finally found life as a static site generated from compiled templates and SCSS files,
+    along with a few vanilla JS files.
+</p>
+<h2>
+    Frameworks
+</h2>
+<p>
+    Static websites are almost as old as the internet, so the concepts of static site generators and templating engines
+    have been around for a long time. Today, there are plenty of fantastic and robust frameworks to choose from. Hugo,
+    Jekyll, Gatsby, and Eleventy are some of the more popular ones, and each boast many features to streamline the
+    development process. Their command line interfaces to make it easy to create a site and generate pages with little
+    effort. The templating engines in the support markup languages, data files, and logical expressions.
+</p>
+<p>
+    Despite the rich ecosystem that these frameworks enjoy, I still chose to create my own site generator from scratch for
+    fun. I call it.. ⌘-cv.
+</p>
+<h2>
+    ⌘-CV
+</h2>
+<p>
+    ⌘-CV (pronounced command C V and named for the copy-paste keys on macOS) is my very own static site generator. It
+    consumes partial HTML templates and JSON data and combines them into a single HTML file. It works just like any other
+    templating engine; mine is different due to how little it really does. The program can do two things:
+</p>
+<ul>
+    <li>Copy an HTML template into another one by replacing placeholder syntax</li>
+    <li>Replace placeholder syntax with data from a JSON file</li>
+</ul>
+<p>
+    I think that this is all that is needed to keep a static website DRY, especially for my limited needs. My site is very
+    simple, so I don’t need any complex templating features.
+</p>
+
+<p>Although I’m sure that if I was proficient with a framework like Hugo I could create an identical site in less time,
+    I feel like it would be overkill for my needs. In fact, the amount of time it took me to write the site generator was
+    similar to the time it would have taken me to learn Hugo (or any other framework) well enough to produce the same
+    product. Although you could argue that it would be better to use a well-tested framework (and you would be right), I
+    think that there is more experience to gain and joy to be had from creating a software project and using it.
+</p>
+
+<p>You can find more about this project here: <a href="/projects/a-static-site-generator.html">https://david.wiles.fyi/projects/a-static-site-generator.html</a>.
+</p>
+
+<h2>Hosting</h2>
+
+<p>There has been an explosion in the number of cloud service providers in the past few years. Choosing between AWS,
+    GCP, Azure, or some other service seemed like a matter of guessing at first. The big three are essentially identical,
+    especially for my needs. I actually ended up going with “other”, which turned out to be Render.
+</p>
+
+<p>Initially I chose Google Cloud Platform. The deciding factors were very minor: I bought my domain from Google and
+    their tutorial was easy to follow. Unfortunately, GCP is somewhat overkill for my needs right now. The total cost for
+    minor traffic (very just me) was about $0.60 per day. Not much, but that adds up to nearly $20 per month, which was
+    more than I wanted to spend at this point. Hosting a static site on GCP would be more cost-efficient for an enterprise
+    or larger organization, since the minimum viable project requires a storage bucket and two load balancers (one for the
+    storage bucket, and another for HTTP to HTTPS redirects). After doing some quick Googling, I found about another cloud
+    service provider called Render, which sounded especially fit for my needs.
+</p>
+
+<p>If you haven’t heard of Render, it’s a cloud hosting service specializing in serverless backends and marketing itself
+    as a Heroku alternative. They offer many of the same services of other cloud providers, but their static website
+    offering has all of the features expected from a static site in 2020. They issue and manage SSL certificates, use
+    HTTP/2 by default, automatically compress pages, and best of all, static site hosting is free! It was the cost that
+    made the decision a no-brainer, but it would still be a convincing alternative otherwise.
+</p>
+
+<h2>Conclusion</h2>
+
+<p>Creating a static site from scratch and hosting it on my own domain has been more challenging than expected, but very
+    rewarding. One of the joys of software development is creating something, especially if that thing can be used by many
+    people.
+</p>
+]]></content></entry><entry><title>A Moka Pot Revelation</title><link href="https://david.wiles.fyi/html/blog/moka-pot-revelation.html" rel="" type=""></link><updated>2021-03-01T22:09:07-06:00</updated><id>david.wiles.fyi/html/blog/moka-pot-revelation.html</id><content type="html"><![CDATA[<h1>A Moka Pot Revelation</h1>
+
+<p>
+  Occasionally, you realize that everything you've read and heard about was wrong. You come to question everything
+  you know about something, and you'll never again think the same way again. That is what happened when I first tried
+  coffee out of a Moka Pot
+</p>
+
+<p>
+  I may be slightly exaggerating, but I do think the moka pot has a bad rep in 'third wave' coffee that it doesn't
+  deserve. If you read about coffee brewing methods, the one that is least recommended is always the moka pot. You'll
+  read that it will give you bitter coffee, that you'll be wasting your expensive coffee beans with an inferior brewing
+  method. I've found that this is not true at all, and the coffee from a moka pot is nearly as good as espresso for
+  certain coffees.
+</p>
+
+<p>
+  A moka pot may not be the most precise method, but it is certainly a tasty one. Like espresso, the coffee is not
+  filtered by paper, but instead with a metal basket (which means its really unfiltered, like the french press). This
+  gives the coffee it produces a rich body, and since the brewing ratio is much lower it will seem closer to espresso
+  than brewed coffee.
+</p>
+
+<p>
+  Brewing with a moka pot may be less popular with coffee enthusiasts because there are fewer variables to mess around
+  with. The only one that should really be changed is the grind size. The ones that you could change but probably
+  shouldn't are the burner temperature and the brew ratio. This makes for a less interactive experience than with a
+  pourover, but pourover coffee can get old every morning. With a moka pot, you simply put the coffee in and let it
+  boil.
+</p>
+
+<p>
+  My process is slightly more complicated than that, but not by much:
+</p>
+
+<ol>
+  <li>
+    Boil water
+  </li>
+  <li>
+    Put coffee in the basket
+  </li>
+  <li>
+    Brew until the spout starts bubbling
+  </li>
+</ol>
+
+<p>
+  Clearly, the moka pot isn't very interactive. However, it can be fun to watch!
+</p>
+
+<p>
+  Although the coffee out of a moka pot isn't really espresso, it also isn't really regular, brewed coffee. And that's
+  what I like about it. In my opinion, brewing darker coffees roasted with an espresso style will taste better out of
+  a moka pot than with any other non-espresso brewing method. The moka pot is another tool in the coffee brewer's
+  and it's a tool that I think is used less often that it should be.
+</p>
+]]></content></entry></feed>

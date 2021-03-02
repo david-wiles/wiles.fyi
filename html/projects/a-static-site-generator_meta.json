@@ -1,6 +1,14 @@
 {
   "title": "A Static Site Generator",
+  "subtitle": "Semi-technical details on a very simple static site generator used to generate this site",
+  "description": "There are many, many static site generators out there to choose from for your new site, but sometimes the best one is the one you create.",
+  "author": "David Wiles",
+  "genre": "web development",
+  "keywords": "web-dev software javascript typescript",
+  "createdDate": "2020-11-28",
+  "updatedDate": "2020-11-28",
   "updated": "2020-11-28T00:00:00-00:00",
   "humanDate": "November 28th, 2020",
-  "link": "/projects/a-static-site-generator.html"
+  "link": "/projects/a-static-site-generator.html",
+  "url": "https://david.wiles.fyi/projects/a-static-site-generator.html"
 }

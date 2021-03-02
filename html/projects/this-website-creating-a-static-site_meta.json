@@ -1,6 +1,14 @@
 {
   "title": "This Website: Creating a Static Site",
+  "subtitle": "A meta-post about this site",
+  "description": "Static websites are easy... or are they? This blog post details my journey to finally deploying my very own blog.",
+  "author": "David Wiles",
+  "genre": "web-development",
+  "keywords": "software web-dev blogging",
+  "createdDate": "2020-09-24",
+  "updatedDate": "2020-11-28",
   "updated": "2020-11-28T00:00:00-00:00",
   "humanDate": "September 24th, 2020",
-  "link": "/projects/this-website-creating-a-static-site.html"
+  "link": "/projects/this-website-creating-a-static-site.html",
+  "url": "https://david.wiles.fyi/projects/this-website-creating-a-static-site.html"
 }
